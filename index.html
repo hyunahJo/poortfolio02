@@ -22,13 +22,17 @@
                 <a href="#">hyunah</a>
             </div>
             <ul class="navbar__menu">
-                <li class="navbar__menu__item">Home</li>
-                <li class="navbar__menu__item">About</li>
-                <li class="navbar__menu__item">Skills</li>
-                <li class="navbar__menu__item">Work</li>
-                <li class="navbar__menu__item">Contact</li>
+                <li class="navbar__menu__item" data-link="#home">Home</li>
+                <li class="navbar__menu__item" data-link="#about">About</li>
+                <li class="navbar__menu__item" data-link="#skills">Skills</li>
+                <li class="navbar__menu__item" data-link="#works">Work</li>
+                <li class="navbar__menu__item" data-link="#contact">Contact</li>
             </ul>
         </nav>
+        <!-- Toggle btn -->
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
         <!-- Home -->
         <section id="home">
             <div class="home__container">
@@ -56,7 +60,7 @@
                     <div class="major__icon">
                         <i class="fab fa-html5"></i>
                     </div>
-                    <h2 class="major__title">HTML5</h2>
+                    <h2 class="major__title">HTML</h2>
                     <div class="major__description">
                         HTML, CSS, JavaScript, TypeScript,
                         <br />React, Vue, Web APIs
@@ -67,7 +71,7 @@
                     <div class="major__icon">
                         <i class="fab fa-css3-alt"></i>
                     </div>
-                    <h2 class="major__title">CSS3</h2>
+                    <h2 class="major__title">CSS</h2>
                     <div class="major__description">
                         HTML, CSS, JavaScript, TypeScript,
                         <br />React, Vue, Web APIs
@@ -105,7 +109,7 @@
                     <p class="job__name">
                       더조은퍼스트컴퓨터학원 웹퍼블리셔(웹디자인)UI/UX 프론트엔드 양성과정
                     </p>
-                    <p class="job__period">2020 Jan - 2020 Aug</p>
+                    <p class="job__period">2020 Jan - 2020 May</p>
                    </div>
               </div>
         </section>
@@ -116,10 +120,7 @@
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>
-          Experience with all phases of the software life-cycle. Passion for
-          learning new technologies. Capable of working within a team environment
-          and independently. Ability to plan and time schedule, work under strict
-          time pressure and adapt quickly when needed.
+          
         </p>
         <div class="skillset">
           <div class="skillset__left">
@@ -127,28 +128,28 @@
             <div class="skill">
               <div class="skill__description">
                 <span>HTML</span>
-                <span>99%</span>
+                <span>80%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 99%;"></div>
+                <div class="skill__value" style="width: 80%;"></div>
               </div>
             </div>
             <div class="skill">
               <div class="skill__description">
                 <span>CSS</span>
-                <span>90%</span>
+                <span>78%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 90%;"></div>
+                <div class="skill__value" style="width: 78%;"></div>
               </div>
             </div>
             <div class="skill">
               <div class="skill__description">
                 <span>JavaScript</span>
-                <span>90%</span>
+                <span>30%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 90%;"></div>
+                <div class="skill__value" style="width: 30%;"></div>
               </div>
             </div>
           </div>
@@ -190,43 +191,43 @@
                   </button>
                 </div>
                 <div class="work__projects">
+                  <a
+                    href="https://github.com/dream-ellie/responsive-nav-bar"
+                    class="project"
+                    data-type="front-end"
+                    target="blank"
+                  >
+                    <img class="project__img" src="imgs/project/minigame_mac.png" alt="minigame" />
+                    <div class="project__description">
+                      <h3>mini game</h3>
+                      <span>HTML, CSS, JavaScript</span>
+                    </div>
+                  </a>
                   <a href="" class="project" target="blank" data-type="front-end">
                     <img
-                      src="imgs/projects/youtube.png"
-                      alt="Youtube"
+                      src="imgs/project/subway_mac.png"
+                      alt="Subway"
                       class="project__img"
                     />
                     <div class="project__description">
-                      <h3>Youtube Site</h3>
+                      <h3>Subway Site</h3>
                       <span>Clone coding with HTML, CSS</span>
                     </div>
                   </a>
                   <a
-                    href="https://github.com/dream-ellie/responsive-nav-bar"
+                    href="#"
                     class="project"
                     data-type="front-end"
                     target="blank"
                   >
                     <img
                       class="project__img"
-                      src="imgs/projects/navbar.png"
-                      alt="navbar"
+                      src="imgs/project/myrealtrip_iphone_mac.png"
+                      alt="myrealtrip"
                     />
                     <div class="project__description">
-                      <h3>Responsive Navbar</h3>
-                      <span>HTML, CSS with media query</span>
-                    </div>
-                  </a>
-                  <a
-                    href="https://github.com/dream-ellie/responsive-nav-bar"
-                    class="project"
-                    data-type="front-end"
-                    target="blank"
-                  >
-                    <img class="project__img" src="imgs/projects/game.png" alt="navbar" />
-                    <div class="project__description">
-                      <h3>Shopping mall game</h3>
-                      <span>HTML, CSS, JavaScript, Json</span>
+                      <h3>Myrealtrip</h3>
+                      <span>Clone coding HTML, CSS with media query</span>
                     </div>
                   </a>
                   <a href="" class="project" data-type="back-end">
@@ -272,14 +273,20 @@
             <h1 class="contact__title">Contact Me</h1>
             <h2 class="contact__email">hun3107@naver.com</h2>
             <div class="contact__links">
-                <a href="" target="_blank">
+                <a href="#" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                
+                <a href="#" target="_blank">
+                    <i class="fa fa-linkedin-square"></i>
+                  </a>
             </div>
             <p class="contact__rights">
                 2020 hyunah - All rights reserved
             </p>
         </section>
+        <!-- Arrow up -->
+        <button class="arrow-up">
+            <i class="fas fa-arrow-up"></i>
+        </button>
     </body>
 </html>
