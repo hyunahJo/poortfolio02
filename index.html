@@ -28,11 +28,11 @@
                 <li class="navbar__menu__item" data-link="#works">Work</li>
                 <li class="navbar__menu__item" data-link="#contact">Contact</li>
             </ul>
+            <!-- Toggle btn -->
+            <button class="navbar__toggle-btn">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
-        <!-- Toggle btn -->
-        <button class="navbar__toggle-btn">
-            <i class="fas fa-bars"></i>
-        </button>
         <!-- Home -->
         <section id="home">
             <div class="home__container">
@@ -62,8 +62,8 @@
                     </div>
                     <h2 class="major__title">HTML</h2>
                     <div class="major__description">
-                        HTML, CSS, JavaScript, TypeScript,
-                        <br />React, Vue, Web APIs
+                        HTML 기본 태그와 시멘틱 요소 등을  
+                        <br />사용하여 마크업을 구성합니다. 
                     </div>
                 </div>
 
@@ -73,8 +73,8 @@
                     </div>
                     <h2 class="major__title">CSS</h2>
                     <div class="major__description">
-                        HTML, CSS, JavaScript, TypeScript,
-                        <br />React, Vue, Web APIs
+                        style 속성을 사용하여 
+                        <br />html을 꾸며줍니다.
                     </div>
                 </div>
 
@@ -84,8 +84,8 @@
                     </div>
                     <h2 class="major__title">JavaScript</h2>
                     <div class="major__description">
-                        HTML, CSS, JavaScript, TypeScript,
-                        <br />React, Vue, Web APIs
+                        JavaScript를 이용하여 동적인
+                        <br />웹페이지를 만들어 줍니다.
                     </div>
                 </div>
             </div>
@@ -180,21 +180,21 @@
                   <button class="category__btn selected" data-filter="*">
                     All <span class="category__count">8</span>
                   </button>
-                  <button class="category__btn" data-filter="front-end">
-                    Front-end <span class="category__count">3</span>
+                  <button class="category__btn" data-filter="minigame">
+                    mini-game <span class="category__count">3</span>
                   </button>
-                  <button class="category__btn" data-filter="back-end">
-                    Back-end <span class="category__count">3</span>
+                  <button class="category__btn" data-filter="media-query">
+                    media-query <span class="category__count">3</span>
                   </button>
-                  <button class="category__btn" data-filter="mobile">
-                    Mobile <span class="category__count">2</span>
+                  <button class="category__btn" data-filter="clone-code">
+                    clone-code <span class="category__count">2</span>
                   </button>
                 </div>
                 <div class="work__projects">
                   <a
                     href="https://github.com/dream-ellie/responsive-nav-bar"
                     class="project"
-                    data-type="front-end"
+                    data-type="minigame"
                     target="blank"
                   >
                     <img class="project__img" src="imgs/project/minigame_mac.png" alt="minigame" />
@@ -203,7 +203,7 @@
                       <span>HTML, CSS, JavaScript</span>
                     </div>
                   </a>
-                  <a href="" class="project" target="blank" data-type="front-end">
+                  <a href="" class="project" target="blank" data-type="clone-code">
                     <img
                       src="imgs/project/subway_mac.png"
                       alt="Subway"
@@ -217,7 +217,7 @@
                   <a
                     href="#"
                     class="project"
-                    data-type="front-end"
+                    data-type="media-query"
                     target="blank"
                   >
                     <img
@@ -231,35 +231,35 @@
                     </div>
                   </a>
                   <a href="" class="project" data-type="back-end">
-                    <img class="project__img" src="imgs/projects/game.png" alt="" />
+                    <img class="project__img" src="" alt="" />
                     <div class="project__description">
                       <h3>Project</h3>
                       <span>Explanation</span>
                     </div>
                   </a>
-                  <a href="" class="project" data-type="back-end">
-                    <img class="project__img" src="imgs/projects/game.png" alt="" />
+                  <a href="" class="project" data-type="minigame">
+                    <img class="project__img" src="" alt="" />
                     <div class="project__description">
                       <h3>Project</h3>
                       <span>Explanation</span>
                     </div>
                   </a>
-                  <a href="" class="project" data-type="mobile">
-                    <img class="project__img" src="imgs/projects/game.png" alt="" />
+                  <a href="" class="project" data-type="minigame">
+                    <img class="project__img" src="" alt="" />
                     <div class="project__description">
                       <h3>Project</h3>
                       <span>Explanation</span>
                     </div>
                   </a>
-                  <a href="" class="project" data-type="mobile">
-                    <img class="project__img" src="imgs/projects/game.png" alt="" />
+                  <a href="" class="project" data-type="minigame">
+                    <img class="project__img" src="" alt="" />
                     <div class="project__description">
                       <h3>Project</h3>
                       <span>Explanation</span>
                     </div>
                   </a>
-                  <a href="" class="project" data-type="mobile">
-                    <img class="project__img" src="imgs/projects/game.png" alt="" />
+                  <a href="" class="project" data-type="minigame">
+                    <img class="project__img" src="" alt="" />
                     <div class="project__description">
                       <h3>Project</h3>
                       <span>Explanation</span>
@@ -270,19 +270,16 @@
         </section>
         <!-- Contact -->
         <section id="contact" class="section">
-            <h1 class="contact__title">Contact Me</h1>
-            <h2 class="contact__email">hun3107@naver.com</h2>
-            <div class="contact__links">
-                <a href="#" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="#" target="_blank">
-                    <i class="fa fa-linkedin-square"></i>
-                  </a>
-            </div>
-            <p class="contact__rights">
-                2020 hyunah - All rights reserved
-            </p>
+          <h1 class="contact__title">Contact Me</h1>
+          <h2 class="contact__email">hun3107@naver.com</h2>
+          <div class="contact__links">
+            <a href="#" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <p class="contact__rights">
+            2020 hyunah - All rights reserved
+          </p>
         </section>
         <!-- Arrow up -->
         <button class="arrow-up">
